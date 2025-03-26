@@ -5,10 +5,6 @@ const baseurl = 'http://localhost:4000/api/todo';
 
 
 
-// axios.get(baseurl)
-//   .then((response) => {
-//     console.log("API Response:", response);
-//   });
 
 
 const getAllTodo = async () => {
