@@ -1,0 +1,46 @@
+.comment-item {
+    display: contents;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-wrap: break-word;
+    object-fit: contain;
+}
+
+.comment-item::-webkit-scrollbar {
+    display: none;
+}
+
+.comment-item {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.todo-icons {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    right: 2rem;
+    margin-left: 3rem;
+    display: inline-block;
+}
+
+.todo-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.comment-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 2rem;
+
+}
+
+.comment-delete {
+    cursor: pointer;
+    margin-bottom: -4px;
+    color: red;
+}

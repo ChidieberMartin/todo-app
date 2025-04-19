@@ -3,13 +3,15 @@ const app = express()
 import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDb from'./db/mongoose.js';
-import router from './routes/todoRoute.js';
+import todoroutes from './routes/todoRoute.js';
+import userRoutes from './routes/userRoute.js';
 
 app.use(cors())
 dotenv.config()
 
 app.use(express.json())
-app.use("/api/todo",router)
+app.use("/api/users",userRoutes)
+app.use("/api/todo",todoroutes)
 
 
 
